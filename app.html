@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+       
+    </head>
+    <body>
+        
+        
+        <input id="firstname" type="text" placeholder="Firstname" required><br>
+        <input id="lastname" type="text" placeholder="Lastname" required><br>
+        <input id="email" type="email" placeholder="Email" required><br>
+        <input id="location" type="text" placeholder="State" required><br>
+        <input id="phone" type="tel" placeholder="Phone" required><br>
+        <input id="technology" type="text" placeholder="Batch" required><br>
+        <input id="comm_address" type="text" placeholder="Communication Address" required><br>
+        <input id="perm_address" type="text" placeholder="Permanent Address" required><br><br><br>
+        <input id="addStudent" type="button" onclick="addStudent()" value="Submit"><br><br>
+                        
+            <p>List of records :</p>
+            <select id='myRecords' onchange="dropdown()">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+             <option value="100">100</option>
+             </select><br><br>
+            
+            <p>Filter :</p>
+            <input type="text" id="myinput" onkeyup="showData()"/><br><br> 
+            <div id="display"></div>
+
+           
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="app3.js"></script>
+    </body>
+</html>
